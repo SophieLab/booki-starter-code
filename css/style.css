@@ -267,14 +267,7 @@ a {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card2 {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
+ .card img {
     object-fit: cover;
 }
 
@@ -296,7 +289,7 @@ a {
 
 .card3 img {
     width: 100%;
-    height: 200px; 
+    height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -338,7 +331,16 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: block;
 }
+
+.hebergements-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
 
 .hebergement-title {
     display: flex;
@@ -380,22 +382,17 @@ a {
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
-.row {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 15px;
+
+.card2 {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    box-sizing: border-box;
 }
 
-.row a {
-    width: calc(33.3333% - 5px);
-    margin-right: 5px;
-}
 
-.row a:nth-child(3n) {
-    margin-right: 0;
-
-}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -443,6 +440,14 @@ a {
 
 /****** Activites ***********/
 
+
+
+.activites-cards-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
 
 .activites-et-marseille section {
     background-color: var(--main-bg-color);
