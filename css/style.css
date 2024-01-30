@@ -602,15 +602,18 @@ footer .footer-menu ul li:first-child{
         justify-content: space-between;
     }
 
-    .populaires-cards .card {
-        width: 30%;
+    .populaires-cards a{
+        width: 100%;
+    }
+    .populaires-cards a .card{
+        margin: 15px;
     }
 
     .populaires-cards .card-title {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .populaires-cards .card-subtitle{
         font-size: 13px;
     }
 
