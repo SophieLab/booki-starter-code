@@ -88,6 +88,8 @@ button {
 
 .fa-star {
     color: rgba(0, 101, 252, 1);
+    font-size: 1em;
+
 }
 
 .neutral-star {
@@ -322,6 +324,7 @@ header nav ul li a:hover::before {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    height: fit-content;
 }
 
 .hebergements-and-populaires section {
@@ -329,6 +332,7 @@ header nav ul li a:hover::before {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     box-sizing: border-box;
+   
 }
 
 /****** Hebergements ***********/
@@ -646,17 +650,23 @@ footer .footer-menu ul li:first-child{
     }
 
     header nav ul li a{
+        top: inherit;
+        bottom: 0;
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        
         width: 100%;
         height: 36px;
+        border-bottom: 2px solid var(--main-bg-color);
     }
+    header nav ul li a:hover {
+      border-bottom: 2px solid var(--main-color);
 
+    }
     header nav ul li a::before{
-        top: inherit;
-        bottom: 0;
+        display: none;
+        border-bottom: 2px solid var(--main-bg-color);
+
     }
     
 
