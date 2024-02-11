@@ -534,10 +534,6 @@ footer .footer-menu ul li a:hover {
     text-decoration: underline;
 }
 
-footer .footer-menu ul li a.title:hover {
-    text-decoration: none;
-}
-
 footer .footer-menu ul li.title {
     color: #000;
     font-size: 18px;
